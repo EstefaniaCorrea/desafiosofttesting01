@@ -16,33 +16,33 @@ public class AmazonSearchPage extends BasePage {
         super(driver);
     }
 
-    // Metodo para navegar a la pagina de Amazon
+    // Navegación en Amazon en la página web inicial
     public void navegarA() {
         navegarA("https://www.amazon.com");
     }
 
-    // Metodo que ingresa datos en la barra de busqueda
+    // Llena el buscador con los datos
     public void buscarProducto(String busqueda){
         escribir(buscador, busqueda);
         clicarElementoId(botonBuscar);
     }
 
-    // Metodo para ir a una pagina 
+    // Abre la web amazon.com
     public void navegarPagina(){
         clicarPagina(botonPagina2);
     }
 
-    //Metodo para Clicar el 3er producto
+    //Se selecciona automaticamente el tercer producto de la lista
     public void seleccionarProducto(){
         clicarElementoXpath(producto3);
     }
     
-    //Metodo para seleccionar numero de productos
+    //Se selecciona el numero de productos a agregar al carrito
     public void anadirSelectorPlegable(){
         selecionarElementoListaDes(selectorPlegable, numProductos, botonAgregarCarrito, 1);
     }
 
-    // Metodo para realizar validaciones al finalizar de agregar cada producto al carrito de compras
+    // Validaciones realizadas
     public void validarMensaje(){
         validarTexto(avisoValidacion);
     }

@@ -7,9 +7,9 @@ import org.openqa.selenium.TakesScreenshot;
 import io.cucumber.java.*;
 import pages.BasePage;
 
-public class Hooks extends BasePage{
+public class Escenarios extends BasePage{
     
-    public Hooks(){
+    public Escenarios(){
         super(driver);
     }
 

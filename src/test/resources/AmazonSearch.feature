@@ -14,4 +14,6 @@ Feature: Probar la Funcionalidad de Busqueda de Amazon
         |             |
         | Alexa       |
         | PlayStation |
+    
+//Se evita que el input del captcha se detecte y se llene con el Item de Alexa, dejando vacío la primera posición
         
